@@ -35,9 +35,6 @@ defineProps<{ project: Project }>()
         </svg>
       </div>
       <p class="card-desc">{{ project.description }}</p>
-      <div class="card-tags">
-        <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
-      </div>
     </div>
   </a>
 </template>
@@ -103,7 +100,6 @@ defineProps<{ project: Project }>()
   font-size: 0.9375rem;
   color: var(--ink-2);
   line-height: 1.7;
-  margin-bottom: 1.25rem;
 }
 
 @media (max-width: 640px) {
