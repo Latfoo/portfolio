@@ -70,3 +70,143 @@ const stack = [
     </div>
   </aside>
 </template>
+
+<style scoped>
+.split-left {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.split-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.625rem;
+}
+
+.split-name {
+  font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.split-tagline {
+  font-size: clamp(1rem, 1.2vw, 1.1875rem);
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+.split-bio {
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+  line-height: 1.85;
+}
+
+.split-ctas {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.split-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stack-heading {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.stack-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack-item {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.3125rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink-2);
+  border-radius: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.about-card {
+  padding: 1.375rem 1.75rem;
+}
+
+.about-card + .about-card {
+  border-top: 1px solid var(--border);
+}
+
+.about-card-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 0.5rem;
+}
+
+.about-card-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.about-card-sub {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+.about-entry + .about-entry { margin-top: 0.75rem; }
+
+.about-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.2rem 0 0;
+}
+
+.about-bullets li {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+  padding-left: 0.9rem;
+  position: relative;
+}
+
+.about-bullets li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--ink-3);
+}
+
+.about-skills { margin-top: 0.75rem; }
+</style>

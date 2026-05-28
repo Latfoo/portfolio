@@ -15,3 +15,19 @@ import { projects } from '../data/projects'
     </div>
   </div>
 </template>
+
+<style scoped>
+.split-right {
+  padding-top: 0.125rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .cards { grid-template-columns: 1fr; }
+}
+</style>

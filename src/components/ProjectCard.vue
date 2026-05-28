@@ -43,6 +43,73 @@ defineProps<{ project: Project }>()
 </template>
 
 <style scoped>
+.card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card-media {
+  height: 260px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-meta {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.card-arrow {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+  margin-top: 0.375rem;
+  color: var(--ink-3);
+}
+
+.card-desc {
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .card-media { height: 200px; }
+}
+
 .card-badge {
   position: absolute;
   top: 1rem;
