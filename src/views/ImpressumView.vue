@@ -25,7 +25,7 @@ import AppFooter from '../components/AppFooter.vue'
 
         <div class="legal-simple-col">
           <h2>Legal Notice (Imprint)</h2>
-          <p class="legal-simple-sub">According to § 5 TMG / § 18 MStV</p>
+          <p class="legal-simple-sub">According to § 5 DDG / § 18 MStV</p>
 
           <h3>Responsible Person</h3>
           <p>
@@ -63,7 +63,8 @@ import AppFooter from '../components/AppFooter.vue'
             IP address, browser type, operating system, referring URL, and timestamp. This data is stored
             temporarily for security and stability purposes and automatically deleted after a short retention
             period. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure and stable
-            operation of the website). See
+            operation of the website). Data transfers to Vercel's servers in the USA are based on the
+            EU-U.S. Data Privacy Framework (European Commission adequacy decision of 10 July 2023). See
             <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">vercel.com/legal/privacy-policy</a>.
           </p>
 
@@ -74,7 +75,7 @@ import AppFooter from '../components/AppFooter.vue'
           <p>Links to external services such as GitHub and LinkedIn are governed by those providers' privacy policies. I have no control over data collected by third-party websites.</p>
 
           <h3>5. Your Rights</h3>
-          <p>Under the GDPR you have the right to access, rectification, erasure, restriction of processing, and data portability, as well as the right to object where processing is based on legitimate interests. Contact me at the address in section 1, or lodge a complaint with a supervisory authority.</p>
+          <p>Under the GDPR you have the right to access, rectification, erasure, restriction of processing, and data portability, as well as the right to object where processing is based on legitimate interests. Contact me at the address in section 1, or lodge a complaint with a supervisory authority. The competent supervisory authority is: Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI), Ludwig-Erhard-Str. 22, 20459 Hamburg, <a href="https://datenschutz-hamburg.de/" target="_blank" rel="noopener noreferrer">datenschutz-hamburg.de</a>.</p>
         </div>
 
       </div>
