@@ -48,22 +48,18 @@ const stack = [
           <p class="about-card-title">B.Sc. Mechanical Engineering (Mechatronics)</p>
           <p class="about-card-sub">Hamburg University of Technology</p>
           <ul class="about-bullets">
-            <li>Semester Abroad · Luleå University of Technology, Sweden</li>
+            <li>Semester Abroad, Luleå University of Technology, Sweden</li>
           </ul>
         </div>
       </div>
       <div class="about-card">
         <p class="about-card-label">Background</p>
         <div class="about-entry">
-          <p class="about-card-title">Robotics Bachelor Thesis Student</p>
-          <ul class="about-bullets">
-            <li>Informative path planning for exploring static environmental fields with a BlueROV underwater robot</li>
-          </ul>
-        </div>
-        <div class="about-entry">
           <p class="about-card-title">C++ Teaching Assistant</p>
           <ul class="about-bullets">
-            <li>Teaching C++ as well as fundamentals of algorithms and data structures</li>
+            <li>Taught C++ fundamentals including algorithms, data structures, and object-oriented programming</li>
+            <li>Developed exercises and problem sets for weekly tutorial sessions with up to 50 bachelor students</li>
+            <li>Mentored students through project work, debugging sessions, and code reviews</li>
           </ul>
         </div>
       </div>
