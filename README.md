@@ -1,6 +1,54 @@
-# Vue 3 + TypeScript + Vite
+# Personal Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Personal portfolio website built with Vue 3, TypeScript, and Vite. Deployed on Vercel.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
-# portfolio
+## Stack
+
+| Tool | Role |
+| --- | --- |
+| Vue 3 | UI framework, single-file components with `<script setup>` |
+| TypeScript | Type safety across components and data |
+| Vue Router | Client-side routing |
+| Vite | Dev server and production bundler |
+| Vercel | Hosting and deployment |
+
+## File Structure
+
+```text
+src/
+├── main.ts              # App entry point
+├── router.ts            # Route definitions
+├── types.ts             # Shared TypeScript interfaces
+├── style.css            # Global styles
+├── App.vue              # Root component (layout shell)
+│
+├── components/
+│   ├── AppNav.vue       # Top navigation bar
+│   ├── AppFooter.vue    # Footer
+│   ├── SidePanel.vue    # About/education sidebar on the home page
+│   ├── ProjectCard.vue  # Single project card with media and tags
+│   └── ProjectGrid.vue  # Grid layout rendering all project cards
+│
+├── views/
+│   ├── HomeView.vue         # Landing page
+│   ├── PortfolioView.vue    # Projects overview
+│   ├── AuvThesisView.vue    # Project detail: underwater robot thesis
+│   ├── GravitySimView.vue   # Project detail: gravity simulator
+│   └── ImpressumView.vue    # Legal notice
+│
+└── data/
+    └── projects.ts      # Project metadata array (title, tags, links, media)
+
+public/
+├── icons.svg            # Icon sprite
+└── portfolio_screen.png # Screenshot used in the portfolio project card
+```
+
+## Development
+
+```bash
+npm install
+npm run dev      # start dev server
+npm run build    # type-check + build to dist/
+npm run preview  # preview production build locally
+```
