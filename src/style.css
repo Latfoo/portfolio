@@ -1,37 +1,89 @@
-@font-face { font-family: 'Inter'; src: url('/inter-latin-300-normal.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/inter-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/inter-latin-400-italic.woff2') format('woff2'); font-weight: 400; font-style: italic;  font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/inter-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/inter-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/inter-latin-700-normal.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+/* ===== Fonts ===== */
+/* swap renders text in a fallback font immediately, then switches to Inter once loaded */
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-300-normal.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/inter-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ===== Design tokens ===== */
 :root {
-  --bg:         #F0EAE0;
-  --surface:    #FFFFFF;
-  --border:     #E4E0D8;
-  --border-2:   #CFC9BF;
-  --ink:        #1A1714;
-  --ink-2:      #6B6560;
-  --ink-3:      #A09890;
-  --accent:     #3D7EAA;
-  --accent-bg:  #ECF4FB;
-  --accent-h:   #2C6690;
-  --nav-h:      3.5rem;
-  --max-w:      72rem;
+  /* Backgrounds */
+  --bg:        #F0EAE0; /* warm beige page background */
+  --surface:   #FFFFFF; /* card / panel background */
+
+  /* Borders */
+  --border:    #E4E0D8; /* default border */
+  --border-2:  #CFC9BF; /* stronger border, e.g. on hover */
+
+  /* Text, three levels of darkness */
+  --ink:       #1A1714; /* primary text */
+  --ink-2:     #6B6560; /* secondary / body text */
+  --ink-3:     #A09890; /* muted / labels */
+
+  /* Accent (blue) */
+  --accent:    #3D7EAA;
+  --accent-bg: #ECF4FB; /* light tint for accent backgrounds */
+  --accent-h:  #2C6690; /* darker shade for hover states */
+
+  /* Layout */
+  --nav-h:     3.5rem;  /* navbar height, used for scroll offset calculations */
+  --max-w:     72rem;   /* max content width */
 }
 
 /* ===== Reset / base ===== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html {}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: var(--bg);
+  /* Two subtle gradient blobs: warm amber at top right, cool blue at bottom left */
   background-image:
     radial-gradient(ellipse 90% 55% at 80% 0%,   oklch(86% 0.10 65 / 0.40) 0%, transparent 65%),
     radial-gradient(ellipse 70% 45% at 10% 100%,  oklch(62% 0.09 250 / 0.18) 0%, transparent 60%);
-  background-attachment: fixed;
+  background-attachment: fixed; /* gradients stay pinned to the viewport while content scrolls */
   color: var(--ink);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,16 +93,24 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
+  min-height: 100svh; /* svh (small viewport height) accounts for mobile browser chrome */
 }
 
 main {
   flex: 1;
-  overflow-x: clip;
+  overflow-x: clip; /* clip (not hidden) prevents a new scroll container from being created */
 }
 
-img, svg { display: block; max-width: 100%; }
-a { text-decoration: none; color: inherit; }
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* ===== Layout ===== */
 .content-wrap {
@@ -74,44 +134,27 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ===== Buttons ===== */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.6875rem 1.375rem;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  border-radius: 0.875rem;
-  letter-spacing: -0.01em;
-  transition: background 200ms;
-}
-
-@media (hover: hover) {
-  .btn-primary:hover {
-    background: var(--accent-h);
-  }
-}
-
+.btn-primary,
 .btn-ghost {
   display: inline-flex;
   align-items: center;
   padding: 0.6875rem 1.375rem;
-  color: var(--ink-2);
   font-size: 0.9375rem;
   font-weight: 500;
   border-radius: 0.875rem;
-  border: 1px solid var(--border);
   letter-spacing: -0.01em;
-  transition: color 200ms, border-color 200ms, background 200ms;
 }
 
-@media (hover: hover) {
-  .btn-ghost:hover {
-    color: var(--ink);
-    border-color: var(--border-2);
-    background: rgb(0 0 0 / 0.02);
-  }
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  transition: background 200ms;
+}
+
+.btn-ghost {
+  color: var(--ink-2);
+  border: 1px solid var(--border);
+  transition: color 200ms, border-color 200ms, background 200ms;
 }
 
 .icon-btn {
@@ -126,7 +169,18 @@ a { text-decoration: none; color: inherit; }
   transition: color 200ms, border-color 200ms;
 }
 
+/* (hover: hover) limits these to pointer devices. Without it, styles can get stuck on mobile after a tap */
 @media (hover: hover) {
+  .btn-primary:hover {
+    background: var(--accent-h);
+  }
+
+  .btn-ghost:hover {
+    color: var(--ink);
+    border-color: var(--border-2);
+    background: rgb(0 0 0 / 0.02);
+  }
+
   .icon-btn:hover {
     color: var(--ink);
     border-color: var(--border-2);
@@ -146,7 +200,7 @@ a { text-decoration: none; color: inherit; }
   padding: 0.25rem 0.625rem;
   background: var(--accent-bg);
   color: var(--accent);
-  border-radius: 9999px;
+  border-radius: 9999px; /* large value = pill shape */
 }
 
 /* ===== Contact ===== */
@@ -192,7 +246,9 @@ a { text-decoration: none; color: inherit; }
 
 @media (hover: hover) {
   .nav-back:hover,
-  .nav-gh:hover { color: var(--ink); }
+  .nav-gh:hover {
+    color: var(--ink);
+  }
 }
 
 /* ===== Responsive ===== */
@@ -285,7 +341,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (min-width: 768px) {
-  .proj-overview-grid { grid-template-columns: 3fr 2fr; }
+  .proj-overview-grid {
+    grid-template-columns: 3fr 2fr; /* text wider than sidebar */
+  }
 }
 
 /* ===== 2-column grid ===== */
@@ -301,17 +359,18 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ===== Project text ===== */
-.proj-about-text {
-  font-size: 0.9375rem;
-  color: var(--ink-2);
-  line-height: 1.75;
-  margin-bottom: 1rem;
-}
-
+.proj-about-text,
 .proj-body-text {
   font-size: 0.9375rem;
   color: var(--ink-2);
   line-height: 1.75;
+}
+
+.proj-about-text {
+  margin-bottom: 1rem;
+}
+
+.proj-body-text {
   margin-bottom: 1.25rem;
   max-width: 40rem;
 }
