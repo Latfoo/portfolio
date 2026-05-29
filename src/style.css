@@ -78,6 +78,7 @@
 }
 
 body {
+  zoom: 0.9;
   background-color: var(--bg);
   /* Two subtle gradient blobs: warm amber at top right, cool blue at bottom left */
   background-image:
