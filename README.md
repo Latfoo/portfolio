@@ -30,10 +30,11 @@ src/
 │
 ├── views/
 │   ├── HomeView.vue         # Landing page
-│   ├── PortfolioView.vue    # Projects overview
-│   ├── AuvThesisView.vue    # Project detail: underwater robot thesis
-│   ├── GravitySimView.vue   # Project detail: gravity simulator
-│   └── ImpressumView.vue    # Legal notice
+│   ├── ImpressumView.vue    # Legal notice
+│   └── projects/
+│       ├── PortfolioView.vue    # Project detail: this portfolio
+│       ├── AuvThesisView.vue    # Project detail: underwater robot thesis
+│       └── GravitySimView.vue   # Project detail: gravity simulator
 │
 └── data/
     └── projects.ts      # Project metadata array and Project interface

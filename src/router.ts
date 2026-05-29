@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from './views/HomeView.vue'
 import ImpressumView from './views/ImpressumView.vue'
-import GravitySimView from './views/GravitySimView.vue'
-import AuvThesisView from './views/AuvThesisView.vue'
-import PortfolioView from './views/PortfolioView.vue'
+import GravitySimView from './views/projects/GravitySimView.vue'
+import AuvThesisView from './views/projects/AuvThesisView.vue'
+import PortfolioView from './views/projects/PortfolioView.vue'
 
 export default createRouter({
   history: createWebHistory(),
