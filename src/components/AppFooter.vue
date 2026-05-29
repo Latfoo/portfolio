@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <footer class="site-footer">
-    <span>&copy; 2026 Latfoo</span>
+    <span>&copy; 2026 Bennett Latosinszky</span>
     <RouterLink to="/impressum" class="footer-link">Imprint/Privacy</RouterLink>
   </footer>
 </template>

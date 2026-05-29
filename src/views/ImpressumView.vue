@@ -15,7 +15,7 @@ import AppFooter from '../components/AppFooter.vue'
       </RouterLink>
     </template>
     <template #right>
-      <span class="nav-logo">Latfoo</span>
+      <span class="nav-logo">Bennett Latosinszky</span>
     </template>
   </AppNav>
 
