@@ -18,7 +18,6 @@ Personal portfolio website built with Vue 3, TypeScript, and Vite. Deployed on V
 src/
 ├── main.ts              # App entry point
 ├── router.ts            # Route definitions
-├── types.ts             # Shared TypeScript interfaces
 ├── style.css            # Global styles
 ├── App.vue              # Root component (layout shell)
 │
@@ -37,7 +36,7 @@ src/
 │   └── ImpressumView.vue    # Legal notice
 │
 └── data/
-    └── projects.ts      # Project metadata array (title, tags, links, media)
+    └── projects.ts      # Project metadata array and Project interface
 
 public/
 ├── icons.svg            # Icon sprite

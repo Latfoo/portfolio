@@ -1,4 +1,14 @@
-import type { Project } from '../types'
+export interface Project {
+  title: string
+  meta: string
+  description: string
+  href: string
+  badge?: string
+  mediaImage?: string
+  mediaImageStyle?: string
+  mediaBg?: string
+  mediaSvg?: string
+}
 
 const auvSvg = `<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.55">
   <circle cx="60" cy="60" r="18" stroke="#4dd0e1" stroke-width="1.5"/>
