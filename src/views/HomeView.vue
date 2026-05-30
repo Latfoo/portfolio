@@ -60,7 +60,7 @@ import ProjectGrid from '../components/ProjectGrid.vue'
 .split-layout {
   position: relative;
   z-index: 1;
-  padding: 5rem clamp(1.5rem, 5.5vw, 5.5rem) 5rem;
+  padding: 7rem clamp(1.5rem, 5.5vw, 5.5rem) 7rem;
   display: grid;
   grid-template-columns: clamp(260px, 30vw, 460px) 1fr;
   gap: clamp(3rem, 5vw, 6.5rem);
@@ -70,7 +70,7 @@ import ProjectGrid from '../components/ProjectGrid.vue'
 @media (max-width: 768px) {
   .split-layout {
     grid-template-columns: 1fr;
-    padding: 3rem 1.5rem 4rem;
+    padding: 3.5rem 1.5rem 5rem;
     gap: 2.5rem;
   }
 }

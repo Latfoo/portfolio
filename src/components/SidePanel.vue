@@ -72,30 +72,31 @@ const stack = [
   align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 1.625rem;
+  gap: 2.25rem;
 }
 
 .split-label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.625rem;
+  margin-bottom: 1rem;
 }
 
 .split-name {
-  font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+  font-size: clamp(3.25rem, 6vw, 6.5rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
   color: var(--ink);
 }
 
 .split-tagline {
-  font-size: clamp(1rem, 1.2vw, 1.1875rem);
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  font-weight: 300;
   color: var(--ink-2);
-  line-height: 1.65;
+  line-height: 1.72;
 }
 
 .split-bio {
@@ -113,7 +114,7 @@ const stack = [
 .split-stack {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.875rem;
 }
 
 .stack-heading {
@@ -151,7 +152,7 @@ const stack = [
 }
 
 .about-card {
-  padding: 1.375rem 1.75rem;
+  padding: 1.625rem 2rem;
 }
 
 .about-card + .about-card {

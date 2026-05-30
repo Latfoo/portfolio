@@ -46,10 +46,14 @@ defineProps<{ project: Project }>()
   border: 1px solid var(--border);
   border-radius: 1.25rem;
   overflow: hidden;
+  transition:
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 260ms ease;
 }
 
 .card-media {
-  height: 260px;
+  height: 280px;
   overflow: hidden;
   background: var(--bg);
 }
@@ -81,11 +85,11 @@ defineProps<{ project: Project }>()
 }
 
 .card-title {
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   font-weight: 600;
   color: var(--ink);
-  letter-spacing: -0.02em;
-  line-height: 1.3;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
 }
 
 .card-arrow {
@@ -94,6 +98,7 @@ defineProps<{ project: Project }>()
   flex-shrink: 0;
   margin-top: 0.375rem;
   color: var(--ink-3);
+  transition: color 220ms ease, transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .card-desc {
@@ -102,8 +107,21 @@ defineProps<{ project: Project }>()
   line-height: 1.7;
 }
 
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(26, 23, 20, 0.08);
+    border-color: var(--border-2);
+  }
+
+  .card:hover .card-arrow {
+    color: var(--accent);
+    transform: translate(2px, -2px);
+  }
+}
+
 @media (max-width: 640px) {
-  .card-media { height: 200px; }
+  .card-media { height: 210px; }
 }
 
 .card-badge {

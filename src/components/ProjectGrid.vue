@@ -23,7 +23,7 @@ import { projects } from '../data/projects'
 
 .cards {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
