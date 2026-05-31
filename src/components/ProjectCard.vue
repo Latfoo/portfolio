@@ -4,7 +4,12 @@ defineProps<{ project: Project }>()
 </script>
 
 <template>
-  <a :href="project.href" class="card">
+  <a
+    :href="project.href"
+    class="card"
+    :target="project.href.startsWith('http') ? '_blank' : undefined"
+    :rel="project.href.startsWith('http') ? 'noopener' : undefined"
+  >
     <div
       class="card-media"
       :style="project.mediaBg
