@@ -10,6 +10,7 @@ export interface Project {
   mediaSvg?: string
 }
 
+
 const auvSvg = `<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.55">
   <circle cx="60" cy="60" r="18" stroke="#4dd0e1" stroke-width="1.5"/>
   <circle cx="60" cy="60" r="34" stroke="#4dd0e1" stroke-width="1" stroke-dasharray="3 4" opacity="0.6"/>
@@ -31,6 +32,14 @@ export const projects: Project[] = [
     badge: 'IN PROGRESS',
     mediaBg: 'linear-gradient(150deg, #061a2e 0%, #0b2d45 45%, #083d4f 75%, #07505e 100%)',
     mediaSvg: auvSvg,
+  },
+  {
+    title: 'Seshlog - Pomodoro Work Session Tracker',
+    meta: 'Python / TypeScript / FastAPI / PostgreSQL / Docker',
+    description: 'Full-stack pomodoro style work session tracker with analytics. FastAPI REST API with JWT auth, many-to-many session tagging, and aggregation endpoints powering tag-filtered stats and a 30-day activity chart. Rate limiting, input validation, and security headers on every endpoint. TypeScript frontend, containerized with Docker.',
+    href: 'https://github.com/Latfoo/pomodoro-app',
+    mediaImage: '/pomodoro_screen.png',
+    mediaImageStyle: 'object-position: top;',
   },
   {
     title: 'Real-Time Gravity Simulation',
