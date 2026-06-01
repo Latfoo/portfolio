@@ -38,7 +38,7 @@ export const projects: Project[] = [
     meta: 'Python / TypeScript / FastAPI / PostgreSQL / Docker',
     description: 'Full-stack pomodoro style work session tracker with analytics. FastAPI REST API with JWT auth, many-to-many session tagging, and aggregation endpoints powering tag-filtered stats and a 30-day activity chart. Rate limiting, input validation, and security headers on every endpoint. TypeScript frontend, containerized with Docker.',
     href: 'https://github.com/Latfoo/pomodoro-app',
-    mediaImage: '/pomodoro_screen.png',
+    mediaImage: '/pomodoro_screen2.png',
     mediaImageStyle: 'object-position: top;',
   },
   {
