@@ -24,7 +24,7 @@ import AppFooter from '../components/AppFooter.vue'
       <div class="legal-simple-grid">
 
         <div class="legal-simple-col">
-          <h2>Legal Notice (Imprint)</h2>
+          <h2>Legal Notice (Impressum)</h2>
           <p class="legal-simple-sub">According to § 5 DDG / § 18 MStV</p>
 
           <h3>Responsible Person</h3>
@@ -37,7 +37,10 @@ import AppFooter from '../components/AppFooter.vue'
           <p>Responsible for content according to § 18(2) MStV: Bennett Latosinszky</p>
 
           <h3>Contact</h3>
-          <p>Email: b.lato [at] web.de</p>
+          <p>
+            Email: <a href="mailto:b.lato@web.de">b.lato@web.de</a><br />
+            Phone: +49 1575 5762233
+          </p>
 
           <h3>External Links</h3>
           <p>This website contains links to third-party websites. I have no control over their content and accept no liability for it. Responsibility for linked pages lies with their respective operators.</p>
@@ -53,7 +56,8 @@ import AppFooter from '../components/AppFooter.vue'
             Schumannstraße 66<br />
             22083 Hamburg<br />
             Germany<br />
-            Email: b.lato [at] web.de
+            Email: <a href="mailto:b.lato@web.de">b.lato@web.de</a><br />
+            Phone: +49 1575 5762233
           </p>
 
           <h3>2. Hosting and Server Logs</h3>
@@ -61,10 +65,11 @@ import AppFooter from '../components/AppFooter.vue'
             This website is hosted by Vercel Inc., 340 Pine Street, Suite 701, San Francisco, CA 94104, USA.
             When you visit this website, the hosting provider automatically collects server log data including
             IP address, browser type, operating system, referring URL, and timestamp. This data is stored
-            temporarily for security and stability purposes and automatically deleted after a short retention
-            period. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure and stable
+            temporarily for security and stability purposes and automatically deleted after 30 days.
+            The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure and stable
             operation of the website). Data transfers to Vercel's servers in the USA are based on the
-            EU-U.S. Data Privacy Framework (European Commission adequacy decision of 10 July 2023). See
+            EU-U.S. Data Privacy Framework (European Commission adequacy decision of 10 July 2023).
+            For details on how Vercel handles this data, see
             <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">vercel.com/legal/privacy-policy</a>.
           </p>
 
