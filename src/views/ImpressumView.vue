@@ -34,7 +34,6 @@ import AppFooter from '../components/AppFooter.vue'
             22083 Hamburg<br />
             Germany
           </p>
-          <p>Responsible for content according to § 18(2) MStV: Bennett Latosinszky</p>
 
           <h3>Contact</h3>
           <p>
@@ -81,6 +80,8 @@ import AppFooter from '../components/AppFooter.vue'
 
           <h3>5. Your Rights</h3>
           <p>Under the GDPR you have the right to access, rectification, erasure, restriction of processing, and data portability, as well as the right to object where processing is based on legitimate interests. Contact me at the address in section 1, or lodge a complaint with a supervisory authority. The competent supervisory authority is: Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI), Ludwig-Erhard-Str. 22, 20459 Hamburg, <a href="https://datenschutz-hamburg.de/" target="_blank" rel="noopener noreferrer">datenschutz-hamburg.de</a>.</p>
+
+          <p class="legal-simple-updated">Updated June 2026</p>
         </div>
 
       </div>
@@ -133,6 +134,12 @@ import AppFooter from '../components/AppFooter.vue'
 
 .legal-simple-col a {
   color: var(--accent);
+}
+
+.legal-simple-updated {
+  margin-top: 2rem;
+  font-size: 0.8125rem;
+  color: var(--ink-3);
 }
 
 @media (max-width: 780px) {
