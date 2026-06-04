@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const stack = [
   { heading: 'Languages', items: ['Python', 'C++', 'TypeScript', 'SQL'] },
-  { heading: 'Web & APIs', items: ['FastAPI', 'Vue', 'HTML / CSS', 'REST APIs'] },
+  { heading: 'Web & APIs', items: ['REST APIs', 'FastAPI', 'Vue', 'Node.js', 'PyTest', 'HTML / CSS'] },
   { heading: 'Databases', items: ['PostgreSQL'] },
-  { heading: 'Tools & Systems', items: ['Git', 'Docker', 'Linux', 'ROS2'] },
+  { heading: 'Tools & Systems', items: ['Git', 'GitHub Actions', 'Docker', 'Linux', 'ROS2'] },
+  { heading: 'Deployment', items: ['Railway', 'Vercel'] },
 ]
 </script>
 
